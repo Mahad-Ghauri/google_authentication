@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import '../services/google_auth_service.dart';
@@ -117,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
                           child: Material(
                             color: Colors.transparent,
                             child: InkWell(
-                              borderRadius: BorderRadius.circular(28),
+                              borderRadius: BorderRadius.circular(10),
                               onTap: _handleGoogleSignIn,
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
@@ -132,21 +134,12 @@ class _LoginPageState extends State<LoginPage> {
                                       height: 24,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
-                                        borderRadius: BorderRadius.circular(4),
+                                        borderRadius: BorderRadius.circular(10),
                                       ),
                                       child: const Icon(
                                         Icons.g_mobiledata,
                                         color: Color(0xFF4285F4),
                                         size: 20,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 12),
-                                    const Text(
-                                      'Sign in with Google',
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors.white,
                                       ),
                                     ),
                                   ],
